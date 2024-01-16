@@ -10,7 +10,7 @@ const Container = styled(Flex)`
   padding: 12px;
   align-items: center;
   background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)),
-    linear-gradient(180deg, #09070c 22%, #9370db 100%);
+    linear-gradient(180deg, #070c07 30%, #72db70 100%);
   ${({ theme }) => theme.mediaQueries.md} {
     padding: 0px;
     background: linear-gradient(180deg, #09070c 22%, #9370db 100%);
@@ -25,7 +25,7 @@ const InnerContainer = styled(Flex)`
 `
 
 const SpeechBubble = styled.div`
-  background: rgba(39, 38, 44, 0.4);
+  background: rgba(39, 44, 38);
   border-radius: 16px;
   padding: 8px;
   width: 60%;
@@ -45,7 +45,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const [, hideBanner] = usePhishingBannerManager()
   const { isMobile, isMd } = useMatchBreakpoints()
   const warningTextAsParts = useMemo(() => {
-    const warningText = t("please make sure you're visiting https://www.woofsite.xyz/ - check the URL carefully.")
+    const warningText = t("please make sure you're visiting https://www.owlfinance.org/ - check the URL carefully.")
     return warningText.split(/(https:\/\/shadowswap.xyz)/g)
   }, [t])
   const warningTextComponent = (

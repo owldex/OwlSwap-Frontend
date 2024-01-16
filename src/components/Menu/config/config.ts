@@ -51,11 +51,11 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
             label: t('Liquidity'),
             href: '/liquidity',
           },
-          {
+        /*  {
             label: t('Gnosis Safe'),
             href: 'https://safe.coredao.org',
             type: DropdownMenuItemType.EXTERNAL_LINK,
-          },
+          }, */
           {
             label: t('Bridge'),
             href: 'https://bridge.coredao.org/',
@@ -63,15 +63,15 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
           },
         ].map((item) => addMenuItemSupported(item, chainId)),
       },
-      // {
-      //   label: t('Earn'),
-      //   href: '/farms',
-      //   icon: EarnIcon,
-      //   fillIcon: EarnFillIcon,
-      //   image: '/images/decorations/pe2.png',
-      //   supportChainIds: SUPPORT_ONLY_BSC,
-      //   items: [
-      //     {
+       {
+         label: t('Earn'),
+         href: '/farms',
+         icon: EarnIcon,
+         fillIcon: EarnFillIcon,
+         image: '/images/decorations/pe2.png',
+         supportChainIds: SUPPORT_ONLY_BSC,
+         items: [ 
+      //    {
       //       label: t('Farms'),
       //       href: '/farms',
       //     },
@@ -99,16 +99,16 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       //       href: '/NotFound',
       //       supportChainIds: SUPPORT_ONLY_BSC,
       //     },
-      //   ].map((item) => addMenuItemSupported(item, chainId)),
-      // },
+         ].map((item) => addMenuItemSupported(item, chainId)),
+       },
 
-      // {
-      //   label: t('Nft Amm'),
-      //   href: '/NotFound',
-      //   icon: NFTAMMIcon,
-      //   fillIcon: NFTAMMFillIcon,
-      //   supportChainIds: SUPPORT_ONLY_BSC,
-      //   items: [
+       {
+         label: t('Nft Amm'),
+         href: '/NotFound',
+         icon: NFTAMMIcon,
+         fillIcon: NFTAMMFillIcon,
+         supportChainIds: SUPPORT_ONLY_BSC,
+         items: [
       //     {
       //       label: t('View Collections'),
       //       href: '/NotFound',
@@ -122,8 +122,8 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       //       label: t('Create A New Pool'),
       //       href: '/NotFound',
       //     },
-      //   ].map((item) => addMenuItemSupported(item, chainId)),
-      // },
+         ].map((item) => addMenuItemSupported(item, chainId)),
+       },
 
       {
         label: '',
@@ -136,11 +136,11 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
             href: '/NotFound',
             supportChainIds: SUPPORT_ONLY_BSC,
           },
-          // {
-          //   label: t('IFO'),
-          //   href: '/ifo',
-          //   supportChainIds: SUPPORT_ONLY_BSC,
-          // },
+           {
+             label: t('IFO'),
+             href: '/ifo',
+             supportChainIds: SUPPORT_ONLY_BSC,
+           },
           // {
           //   label: t('Shadow Puppet'),
           //   href: '/shadow-puppet',
@@ -157,11 +157,11 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
           // {
           //   type: DropdownMenuItemType.DIVIDER,
           // },
-          {
-            label: t('Blog'),
-            href: '/NotFound',
-            type: DropdownMenuItemType.EXTERNAL_LINK,
-          },
+         // {
+         //   label: t('Blog'),
+        //    href: '/NotFound',
+        //    type: DropdownMenuItemType.EXTERNAL_LINK,
+         // },
           {
             label: t('Docs'),
             href: '/NotFound',

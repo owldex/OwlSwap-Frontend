@@ -32,7 +32,7 @@ const Stats = () => {
     icon: <img src="/images/staked.png" alt="WoofSwap" className="Shadow-road" width="36px"  />,
   }
 
-  return (
+  return /* (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
     <img src="/images/woof-icon.png" alt="WoofSwap" className="Shadow-road"height="52px" width="52px"  />
       <Heading textAlign="center" scale="xl">
@@ -50,7 +50,7 @@ const Stats = () => {
           <>{tvl ? <>{tvlString}</> : <Skeleton display="inline-block" height={16} width={70} mt="2px" />}</>
           {inFunds}
         </Text>
-      </Flex> */}
+      </Flex> }
 
       <Text textAlign="center" color="textSubtle" bold mb="32px">
         {t('Will you join the Shadows?')}
@@ -80,7 +80,7 @@ const Stats = () => {
         </IconCard>
       </Flex>
     </Flex>
-  )
+  )*/
 }
 
 export default Stats

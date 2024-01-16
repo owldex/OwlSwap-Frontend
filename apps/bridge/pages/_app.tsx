@@ -65,7 +65,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="description"
           content="ShadowSwap, the #1 DEX on Core Chain with the best farms in DeFi, a NFT AMM Dex and a lending protocol."
         />
-        <meta name="theme-color" content="#1FC7D4" />
+        <meta name="theme-color" content="#311fd4" />
         <meta name="twitter:image" content="https://shadowswap.xyz/images/shdwhero.png" />
         <meta
           name="twitter:description"

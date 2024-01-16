@@ -77,8 +77,8 @@ const Hero = () => {
           </Flex>
         </Flex>
         <Flex
-          height={['192px', null, null, '100%']}
-          width={['192px', null, null, '100%']}
+          height={['250px', null, null, '100%']}
+          width={['400px', null, null, '100%']}
           flex={[null, null, null, '1']}
           mb={['24px', null, null, '0']}
           position="relative"
